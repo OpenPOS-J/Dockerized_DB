@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'openpos-db'
+    image: mysql:8.0
+    environment:
+      - MYSQL_DATABASE=openpos
+      - MYSQL_PASSWORD=Password123
+      - MYSQL_ROOT_PASSWORD=P@ss4Sup3r
+      - MYSQL_USER=openpos
+    ports:
+      - 3306:3306
